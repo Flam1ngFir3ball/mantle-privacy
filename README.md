@@ -2,7 +2,7 @@
 
 Legal pages for **Mantle**, hosted free on GitHub Pages behind **mantlefit.app**.
 
-## Canonical URLs (use these everywhere)
+## Canonical URLs
 
 | Page | URL |
 |---|---|
@@ -10,13 +10,12 @@ Legal pages for **Mantle**, hosted free on GitHub Pages behind **mantlefit.app**
 | Privacy | https://mantlefit.app/privacy/ |
 | Terms | https://mantlefit.app/terms/ |
 
-App Store Connect: Support + Privacy Policy fields. Paywall: Privacy + Terms.
-
-Contact email on the Support page: `support@mantlefit.app` (set up forwarding at your registrar if you do not host mail yet).
+Support contact (linked as “Contact support”, not shown as a raw URL):
+https://github.com/Flam1ngFir3ball/mantle-privacy/issues
 
 ## Hosting
 
-GitHub Pages from `main` `/`, custom domain `mantlefit.app`, HTTPS enforced. Source stays in this repo; users only ever see mantlefit.app.
+GitHub Pages from `main` `/`, custom domain `mantlefit.app`, HTTPS enforced.
 
 ## Disclaimer
 
