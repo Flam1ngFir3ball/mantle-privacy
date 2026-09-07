@@ -1,40 +1,60 @@
 # mantle-privacy
 
-Public legal pages for **Mantle** (App Store Support URL + Privacy Policy URL + Terms).
+Legal pages for **Mantle**, hosted free on **GitHub Pages** with custom domain **mantlefit.app**.
 
-## Live URLs (after GitHub Pages is on)
+## URLs (after DNS)
 
 | Page | URL |
 |---|---|
-| Support | https://Flam1ngFir3ball.github.io/mantle-privacy/ |
-| Privacy | https://Flam1ngFir3ball.github.io/mantle-privacy/privacy.html |
-| Terms | https://Flam1ngFir3ball.github.io/mantle-privacy/terms.html |
+| Support | https://mantlefit.app/ |
+| Privacy | https://mantlefit.app/privacy/ |
+| Terms | https://mantlefit.app/terms/ |
 
-Paste **Support** and **Privacy** into App Store Connect. The paywall links Privacy + Terms.
+Fallback while DNS propagates: https://flam1ngfir3ball.github.io/mantle-privacy/
 
-## Enable Pages
+## DNS at your registrar (free)
 
-Repo **Settings → Pages → Build and deployment → Source: Deploy from a branch → `main` / `/ (root)`**.
+Point `mantlefit.app` at GitHub Pages. In the domain’s DNS panel:
+
+### Apex (`mantlefit.app`)
+
+Delete conflicting old A / AAAA / CNAME records for `@`, then add:
+
+| Type | Host | Value |
+|---|---|---|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+
+Optional IPv6:
+
+| Type | Host | Value |
+|---|---|---|
+| AAAA | `@` | `2606:50c0:8000::153` |
+| AAAA | `@` | `2606:50c0:8001::153` |
+| AAAA | `@` | `2606:50c0:8002::153` |
+| AAAA | `@` | `2606:50c0:8003::153` |
+
+### Optional `www`
+
+| Type | Host | Value |
+|---|---|---|
+| CNAME | `www` | `Flam1ngFir3ball.github.io` |
+
+In GitHub: repo **Settings → Pages → Custom domain** = `mantlefit.app`, then enable **Enforce HTTPS** once the certificate is ready (often under an hour after DNS is correct).
+
+This repo includes a `CNAME` file for `mantlefit.app`.
+
+## App Store Connect
+
+- Support URL: `https://mantlefit.app/`
+- Privacy Policy URL: `https://mantlefit.app/privacy/`
 
 ## Contact
 
-Replace the GitHub Issues link on `index.html` with your real support email when you have one.
-
-## Apple Privacy Nutrition Label (suggested)
-
-Aligned with Mantle’s design and `PrivacyInfo.xcprivacy` (`NSPrivacyTracking` = false, no collected data types declared for developer collection):
-
-| Question | Suggested answer |
-|---|---|
-| Track users? | **No** |
-| Collect data linked to identity for our servers? | **No** (no Mantle backend) |
-| Health & Fitness | Used for **App Functionality** only if you declare HealthKit use; data stays with Apple Health / on device, not sold |
-| Purchases | Handled by Apple; not used for tracking |
-| Product interaction / analytics SDKs | **None** in-app as designed |
-| Photos | Add-only wallpaper save; not used for tracking |
-
-Confirm the final Nutrition Label in App Store Connect against the shipping binary.
+Replace the GitHub Issues link on the Support page with your email when ready.
 
 ## Disclaimer
 
-These pages are practical indie disclosures, not formal legal advice.
+Practical indie disclosures, not formal legal advice.
