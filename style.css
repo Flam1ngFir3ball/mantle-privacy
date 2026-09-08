@@ -50,6 +50,14 @@ p, li { color: var(--ink); }
   color: var(--muted);
   font-size: 0.95rem;
 }
+.contact {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  font-size: 1.05rem;
+  word-break: break-word;
+}
 ul { padding-left: 1.2rem; }
 footer {
   max-width: var(--max);
