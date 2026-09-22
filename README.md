@@ -12,7 +12,7 @@ Host for **mantlefit.app** legal pages (GitHub Pages). These pages are written t
 
 Public support and privacy contact (Guideline 1.5 requires an email, address, or phone on the Support URL):
 
-`mantlefit@outlook.com`
+`mantleapp@icloud.com`
 
 GitHub Issues remain an optional extra channel. Do not use Issues as the only contact method: they require a GitHub login, which App Review can reject.
 
