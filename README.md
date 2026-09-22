@@ -16,6 +16,16 @@ Public support and privacy contact (Guideline 1.5 requires an email, address, or
 
 GitHub Issues remain an optional extra channel. Do not use Issues as the only contact method: they require a GitHub login, which App Review can reject.
 
+## Prices are literals here
+
+`terms/index.html` names the US prices of all three products outright, because
+Guideline 3.1.2(c) lists price among the disclosures a subscription app must
+make. In the app those figures are derived from `StoreKitManager` and can never
+go stale; **here they are typed**, and no test in the Mantle repo can see this
+file. A reprice must update this page AND repaste it into the ASC License
+Agreement field. That is step 5 of the price-change checklist in
+`docs/mantle/APP-STORE-CONNECT.md`.
+
 ## App Store Connect checklist
 
 1. **Support URL:** `https://mantlefit.app/`
