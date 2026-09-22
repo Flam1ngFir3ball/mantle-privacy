@@ -20,7 +20,7 @@ GitHub Issues remain an optional extra channel. Do not use Issues as the only co
 
 1. **Support URL:** `https://mantlefit.app/`
 2. **Privacy Policy URL:** `https://mantlefit.app/privacy/`
-3. **Terms of Use:** paste `Terms of Use: https://mantlefit.app/terms/` into the App Description (every locale). Optionally also set a custom EULA in App Information, or keep Apple’s standard EULA and still include this link.
+3. **Terms of Use (custom EULA):** `/terms/` is a custom EULA, not Apple's standard one, so the route Apple specifies for it is **App Information → License Agreement → Custom**: paste the page's full text there (all territories). Also add `Terms of Use: https://mantlefit.app/terms/` to the App Description. Do **not** add Apple's standard-EULA link to the description alongside it — that signals two governing agreements; the page already cites the standard EULA inline as its baseline, which is the right place for it. **Keep the ASC text and the page identical:** every edit to `terms/index.html` means repasting into ASC (set 2026-09-21 after the 3.1.2(c) rejection).
 4. **In-app / paywall:** tappable Privacy Policy and Terms of Use links (Guideline 5.1.1 and Schedule 2 / 3.1.2). Subscription title, length, and StoreKit price must appear on the paywall.
 5. **App Privacy nutrition label:** match the shipping binary. Suggested baseline for Mantle as designed (on-device, no developer backend, no ads, no tracking SDKs): do not track; do not declare developer-operated collection onto your servers. Confirm HealthKit, CloudKit, StoreKit, and Photos against Apple’s “collect” definition and the privacy manifest before submission.
 
