@@ -58,6 +58,11 @@ p, li { color: var(--ink); }
   font-size: 1.05rem;
   word-break: break-word;
 }
+/* App Store badge: Apple requires at least 40px tall and clear space of a
+   quarter of its height (12.5px at 50px) on every side. */
+.store { margin: 1rem 0; }
+.store a { display: inline-block; line-height: 0; }
+.store img { height: 50px; width: auto; }
 ul { padding-left: 1.2rem; }
 footer {
   max-width: var(--max);
