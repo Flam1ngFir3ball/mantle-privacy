@@ -8,6 +8,25 @@ Host for **mantlefit.app** legal pages (GitHub Pages). These pages are written t
 | Privacy | https://mantlefit.app/privacy/ | App Information → **Privacy Policy URL** (and in-app + paywall link) |
 | Terms of Use | https://mantlefit.app/terms/ | App description and in-app/paywall **Terms of Use (EULA)** link |
 
+## App Store badge
+
+The Support page links the live listing
+(https://apps.apple.com/us/app/mantle-become-unshakeable/id6809489375) with
+Apple's official black **Download on the App Store** badge, hosted here at
+`images/app-store-badge.svg` so the page makes no request to Apple (verified:
+0 requests to apple.com on load).
+
+- **Source:** downloaded unmodified 2026-09-24 from
+  `https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us`
+  (10,804 bytes, 119.66x40; scanned: no scripts, handlers or external
+  references). The older `tools.applemediaservices.com` host only redirects
+  there, and `tools.applemarketingtools.com` does not exist.
+- **Rules:** never redraw, recolour or crop it. Shown at 50px tall (Apple's
+  minimum is 40px) with 1rem of clear space (Apple asks for a quarter of the
+  badge height); see `.store` in `style.css`.
+- **Updating:** a local copy does not follow Apple's artwork changes. If
+  Apple revises the badge, re-download from the URL above and replace the file.
+
 ## Contact
 
 Public support and privacy contact (Guideline 1.5 requires an email, address, or phone on the Support URL):
